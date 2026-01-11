@@ -1,0 +1,25 @@
+
+<!-- This is the base template all other templates reffer to -->
+<!-- By making this one super sweet we can just reuse it everywhere -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+<nav>
+  <a href="/">Home</a>
+  <a href="/game">Game</a>
+  <a href="/rules">Rules</a>
+  <a href="/about">About</a>
+</nav>
+
+<hr>
+
+{% block content %}{% endblock %}
+
+</body>
+</html>

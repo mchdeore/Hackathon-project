@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block title %}Game{% endblock %}
+
+{% block content %}
+ <canvas id="game" width="600" height="400" style="border:1px solid black;"></canvas>
+<script defer src="{{ url_for('static', filename='game.js') }}"></script>
+{% endblock %}
