@@ -3,7 +3,7 @@ from game import Game
 
 
 app = Flask(__name__)
-# create the app object from the Flask class
+# create the app object from the Flask class)
 
 @app.route('/')
 # for the route / (ie the home page)
@@ -28,4 +28,4 @@ def game():
 
 if __name__ == '__main__':
     #has to stay at bottom so that app is defined before running
-    app.run(debug=True)
+    app.run(host="127.0.0.1", port=5001, debug=True)
